@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+}
+#header1 {
+  width: 100%;
+  height: 200px;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  background-color: rgb(68, 25, 68);
+  position: sticky;
+  border: 1px solid transparent;
+  /* margin-bottom: 20px; */
+  top: 0;
+}
+h1 {
+  color: white;
+  font-family: cursive;
+}
+#header1 > p {
+  color: wheat;
+}
+#movie {
+  width: 200px;
+  height: 30px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS23D0RHlOmFtGF--b1YQ3Ar1O7Mj38pTvbrQ&usqp=CAU);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 15px;
+}
+#movie:focus {
+  width: 300px;
+}
+#popup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+#suggestionbox {
+  margin: auto;
+  /* display: flex; */
+  width: 350px;
+  height: 350px;
+  overflow-y: scroll;
+  position: fixed;
+  z-index: 1002;
+}
+#suggestionbox::-webkit-scrollbar {
+  display: none;
+}
+#suggestionbox > div {
+  height: 70px;
+  display: flex;
+  border-radius: 10px;
+  margin: 4px;
+  background-color: white;
+}
+#suggestionbox > div > div:nth-child(1) {
+  height: 100%;
+  width: 40%;
+}
+#suggestionbox > div > div:nth-child(1) > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+#suggestionbox > div > div:nth-child(2) {
+  height: 100%;
+  width: 60%;
+  line-height: 8px;
+  margin-left: 4px;
+}
+#suggestionbox > div > div:nth-child(2) > h4,
+span {
+  margin-top: 2;
+}
+#trendingdiv {
+  border: 1px solid transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  /* position: absolute; */
+}
+#trendingdiv > div {
+  height: 450px;
+  width: 350px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#trendingdiv > div:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#trendingdiv > div > div:nth-child(1) {
+  height: 50%;
+  width: 100%;
+}
+#trendingdiv > div > div:nth-child(1) > img {
+  height: 100%;
+  width: 100%;
+}
+.spanclass {
+  display: inline;
+}
+#info {
+  width: 100%;
+  text-align: center;
+}
